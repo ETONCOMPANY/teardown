@@ -1,0 +1,257 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#mainVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay .container {
+    color: white;
+}
+
+.bg-green {
+    background-color: rgba(40, 167, 69, 0.7);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-section {
+    width: 100%; /* 100% 영역 설정 */
+    background-color: #f8f9fa; /* 섹션 배경색 추가 */
+    padding: 0; /* 섹션 패딩 제거 */
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-fluid.shadow-sm {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    max-width: 1920px; /* 최대 너비 제한 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.img-limit {
+    max-width: 1920px; /* 최대 너비 제한 */
+    width: 100%;
+    height: auto;
+}
+
+.body-img {
+    max-width: 1920px; /* 최대 너비 제한 */
+    width: 100%;
+    height: auto;
+}
+
+.img-max-width {
+    max-width: 1920px; /* 최대 너비 제한 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+section {
+    padding: 30px 0; /* 위아래 섹션 여백 줄임 */
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* 카드의 가로 길이 확장 */
+    margin: 0 10px; /* 여백 조정 */
+    max-width: 100%; /* 카드의 최대 너비를 설정 */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1440px; /* 컨테이너의 최대 너비를 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.icon-wrapper {
+    margin: 20px 0;
+}
+
+.container.text-center.shadow-sm.rounded.bg-white.p-4 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    border-radius: 10px; /* 모서리 둥글게 */
+}
+
+/* 플로팅 아이콘 스타일링 */
+.floating-icons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floating-icons .phone-icon, .floating-icons .kakao-icon {
+    margin: 10px 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-icons .phone-icon i {
+    font-size: 24px;
+    color: #28a745;
+}
+
+.floating-icons .kakao-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 포트폴리오 스타일 */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* 원하는 고정 높이 설정 */
+}
+
+.portfolio-item img, .portfolio-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* 스크롤 애니메이션 */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .carousel-item .row > div {
+        display: none;
+    }
+    .carousel-item .row > div:first-child {
+        display: block;
+    }
+}
